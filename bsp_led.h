@@ -26,6 +26,7 @@
 #define BSP_LED_H_
 
 /***************************** Include Files *********************************/
+#include "config.h"
 #include "stm32f4xx.h"
 
 /************************** Constant Definitions *****************************/
@@ -34,10 +35,10 @@
  */
  typedef enum
  {
-   LED0 = GPIO_PIN_12,
-   LED1 = GPIO_PIN_13,
-   LED2 = GPIO_PIN_14,
-   LED3 = GPIO_PIN_15
+   LED0 = LED3_PIN,
+   LED1 = LED4_PIN,
+   LED2 = LED5_PIN,
+   LED3 = LED6_PIN
  } led_pin;
 
 /**

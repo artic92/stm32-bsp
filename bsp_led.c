@@ -34,17 +34,17 @@
  */
 void myBSP_LED_Init(led_pin led_to_init)
 {
-	GPIO_InitTypeDef gpiod_init;
+	GPIO_InitTypeDef gpio_init;
 
 	__GPIOD_CLK_ENABLE();
 
-	gpiod_init.Pin = led_to_init;
-	gpiod_init.Mode = GPIO_MODE_OUTPUT_PP;
-	gpiod_init.Pull = GPIO_PULLUP;
-	gpiod_init.Speed = GPIO_SPEED_HIGH;
+	gpio_init.Pin = led_to_init;
+	gpio_init.Mode = GPIO_MODE_OUTPUT_PP;
+	gpio_init.Pull = GPIO_PULLUP;
+	gpio_init.Speed = GPIO_SPEED_HIGH;
 
-	HAL_GPIO_Init(GPIOD, &gpiod_init);
-	HAL_GPIO_WritePin(GPIOD, led_to_init, GPIO_PIN_RESET); 
+	HAL_GPIO_Init(GPIOD, &gpio_init);
+	HAL_GPIO_WritePin(GPIOD, led_to_init, GPIO_PIN_RESET);
 }
 
 /**
