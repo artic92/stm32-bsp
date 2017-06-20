@@ -23,7 +23,7 @@
 /**
  * @brief Inizializza l'hardware di supporto.
  *
- * @param leds_to_init è la maschera di bit indicante i LED da abilitare.
+ * @param led_to_init è la maschera di bit indicante i LED da abilitare.
  *		Questo parametro può essere uno tra:
  *			@ref LED0
  *			@ref LED1

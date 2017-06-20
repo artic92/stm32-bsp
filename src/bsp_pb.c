@@ -24,7 +24,7 @@
 /**
  * @brief Inizializza l'hardware di supporto.
  *
- * @param int_config è una costante che configura il supporto alle interruzioni.
+ * @param mode è una costante che configura il supporto alle interruzioni.
  *    Se impostata come INT_ENABLED abilita le interruzioni, se impostata a
  *    INT_DISABLED il supporto alle interruzioni è disabilitato.
  *

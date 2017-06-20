@@ -19,7 +19,7 @@
 *
 * @details
 *   API che definiscono un basic support package per l'utilizzo dei pulsanti
-*   su stm32. Questa libreria fa uso degli HAL drivers offerti dell'ST.
+*   su stm32. Questa libreria fa uso dei driver HAL dell'ST Microelectronics.
 *
 */
 #ifndef BSP_PB_H_
@@ -33,7 +33,7 @@
  * @brief Enumerazione che indica la modalità di funzionamento del pulsante.
  *
  * @details Questa enumerazione deve essere utilizzata nella fase di configurazione
- *    scegliendo se controllare il pulsante in polling o mediante interruzione.
+ *    per controllare il pulsante in polling o mediante interruzione.
  */
  typedef enum
  {

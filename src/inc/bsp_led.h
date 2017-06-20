@@ -19,7 +19,7 @@
 *
 * @details
 *   API che definiscono un basic support package per l'utilizzo dei LED su stm32.
-*   Questa libreria fa uso degli HAL drivers offerti dell'ST.
+*   Questa libreria fa uso dei driver HAL dell'ST Microelectronics.
 *
 */
 #ifndef BSP_LED_H_
