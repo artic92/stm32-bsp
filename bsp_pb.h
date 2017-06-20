@@ -30,18 +30,22 @@
 
 /************************** Constant Definitions *****************************/
 /**
- * @name Definizioni delle modalità di funzionamento del pulsante
- * @{
+ * @brief Enumerazione che indica la modalità di funzionamento del pulsante.
+ *
+ * @details Questa enumerazione deve essere utilizzata nella fase di configurazione
+ *    scegliendo se controllare il pulsante in polling o mediante interruzione.
  */
-#define BUTTON_MODE_POLLING 0
-#define BUTTON_MODE_INT 1
-/** @} */
+ typedef enum
+ {
+   INT_ENABLED,          ///< Modalità di funzionamento mediante polling
+   INT_DISABLED          ///< Modalità di funzionamento mediante interruzioni
+ } mode_enum;
 
 /**
- * @name Funzioni di inizializazzione
+ * @name Funzioni di inizializzazione
  * @{
  */
-void myBSP_PB_Init(int mode);
+void myBSP_PB_Init(mode_enum mode);
 /** @} */
 
 /**

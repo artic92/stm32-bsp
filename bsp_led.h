@@ -30,30 +30,31 @@
 
 /************************** Constant Definitions *****************************/
 /**
- * @name Definizioni dei pin
- * @{
+ * @brief Enumerazione che specifica i pin sui quali i led sono posizionati.
  */
-#define LED0 GPIO_PIN_12
-#define LED1 GPIO_PIN_13
-#define LED2 GPIO_PIN_14
-#define LED3 GPIO_PIN_15
-/** @} */
+ typedef enum
+ {
+   LED0 = GPIO_PIN_12,
+   LED1 = GPIO_PIN_13,
+   LED2 = GPIO_PIN_14,
+   LED3 = GPIO_PIN_15
+ } led_pin;
 
 /**
- * @name Funzioni di inizializazzione
+ * @name Funzioni di inizializzazione
  * @{
  */
-void myBSP_LED_Init(uint16_t led_to_init);
-void myBSP_LED_deInit(uint16_t led_to_disable);
+void myBSP_LED_Init(led_pin led_to_init);
+void myBSP_LED_deInit(led_pin led_to_disable);
 /** @} */
 
 /**
  * @name Funzioni per le operazioni di I/O
  * @{
  */
-void myBSP_LED_On(uint16_t on_led);
-void myBSP_LED_Off(uint16_t off_led);
-void myBSP_LED_Toggle(uint16_t toggle_led);
+void myBSP_LED_On(led_pin on_led);
+void myBSP_LED_Off(led_pin off_led);
+void myBSP_LED_Toggle(led_pin toggle_led);
 /** @} */
 
 #endif /* BSP_LED_H_ */

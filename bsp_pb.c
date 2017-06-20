@@ -33,11 +33,13 @@
  *
  * @return none.
  */
-void myBSP_PB_Init(int mode)
+void myBSP_PB_Init(mode_enum mode)
 {
 	GPIO_InitTypeDef gpioa_init;
 
-	if(mode == BUTTON_MODE_POLLING){
+		__GPIOA_CLK_ENABLE();
+
+	if(mode == INT_DISABLED){
 		gpioa_init.Pin = GPIO_PIN_0;
 		gpioa_init.Mode = GPIO_MODE_INPUT;
 		gpioa_init.Pull = GPIO_NOPULL;
@@ -48,7 +50,7 @@ void myBSP_PB_Init(int mode)
 		gpioa_init.Pull = GPIO_NOPULL;
 		gpioa_init.Speed = GPIO_SPEED_HIGH;
 
-		HAL_NVIC_SetPriority(EXTI0_IRQn, 0xF, 0xF);
+		HAL_NVIC_SetPriority(EXTI0_IRQn, 15, 15);
 		HAL_NVIC_ClearPendingIRQ(EXTI0_IRQn);
 		HAL_NVIC_EnableIRQ(EXTI0_IRQn);
 	}

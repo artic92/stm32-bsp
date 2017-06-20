@@ -35,8 +35,8 @@ void setup()
 	myBSP_LED_Init(LED1);
 	myBSP_LED_Init(LED2);
 	myBSP_LED_Init(LED3);
-//	myBSP_PB_Init(BUTTON_MODE_POLLING);
-	myBSP_PB_Init(BUTTON_MODE_INT);
+//	myBSP_PB_Init(INT_DISABLED);
+	myBSP_PB_Init(INT_ENABLED);
 }
 
 void loop()
