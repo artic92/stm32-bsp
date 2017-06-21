@@ -41,6 +41,18 @@
    INT_DISABLED          ///< Modalità di funzionamento mediante interruzioni
  } mode_enum;
 
+ /**
+  * @brief Enumerazione che indica lo stato di funzionamento del pulsante.
+  *
+  * @details Questa enumerazione vien utilizzata dal metodo myBSP_PB_GetState().
+  * @see myBSP_PB_GetState():
+  */
+  typedef enum
+  {
+    PUSHED,             ///< Il pulsante è stato premuto
+    NOT_PUSHED          ///< Il pulsante è in uno stato di riposo
+  } state_enum;
+
 /**
  * @name Funzioni di inizializzazione
  * @{
@@ -52,7 +64,7 @@ void myBSP_PB_Init(mode_enum mode);
  * @name Funzioni per le operazioni di I/O
  * @{
  */
-GPIO_PinState myBSP_PB_GetState();
+state_enum myBSP_PB_GetState();
 /** @} */
 
 #endif /* BSP_PB_H_ */

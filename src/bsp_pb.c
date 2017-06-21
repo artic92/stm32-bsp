@@ -73,7 +73,10 @@ void myBSP_PB_deInit(){
  *
  * @return Costante che indica lo stato del pulsante.
  */
-GPIO_PinState myBSP_PB_GetState()
+state_enum myBSP_PB_GetState()
 {
-	return HAL_GPIO_ReadPin(BUTTON_GPIO_PORT, BUTTON_PIN);
+	if(HAL_GPIO_ReadPin(BUTTON_GPIO_PORT, BUTTON_PIN) == GPIO_PIN_SET)
+		return PUSHED;
+	else
+		return NOT_PUSHED;
 }
