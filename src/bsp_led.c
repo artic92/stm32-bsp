@@ -25,10 +25,10 @@
  *
  * @param led_to_init è la maschera di bit indicante i LED da abilitare.
  *		Questo parametro può essere uno tra:
- *			@ref LED0
- *			@ref LED1
- *			@ref LED2
- *			@ref LED3
+ *			@ref LEDa
+ *			@ref LEDb
+ *			@ref LEDc
+ *			@ref LEDd
  *
  * @return none.
  */
@@ -52,10 +52,10 @@ void myBSP_LED_Init(led_pin led_to_init)
  *
  * @param led_to_disable è la maschera di bit indicante i LED da disabilitare.
  *		Questo parametro può essere uno tra:
- *			@ref LED0
- *			@ref LED1
- *			@ref LED2
- *			@ref LED3
+ *			@ref LEDa
+ *			@ref LEDb
+ *			@ref LEDc
+ *			@ref LEDd
  *
  * @return none.
  */
@@ -68,11 +68,11 @@ void myBSP_LED_deInit(led_pin led_to_disable)
  * @brief Accende i LED selezionati.
  *
  * @param on_led è la maschera di bit indicante i LED da accendere.
- *		Questo parametro può essere uno tra:
- *			@ref LED0
- *			@ref LED1
- *			@ref LED2
- *			@ref LED3
+ *		Questo parametro deve essere uno o più tra:
+ *			@ref LEDa
+ *			@ref LEDb
+ *			@ref LEDc
+ *			@ref LEDd
  *
  * @return none.
  *
@@ -88,11 +88,11 @@ void myBSP_LED_On(led_pin on_led)
  * @brief Spegne i LED selezionati.
  *
  * @param off_led è la maschera di bit indicante i LED da spegnere.
- *		Questo parametro può essere uno tra:
- *			@ref LED0
- *			@ref LED1
- *			@ref LED2
- *			@ref LED3
+ *		Questo parametro deve essere uno o più tra:
+ *			@ref LEDa
+ *			@ref LEDb
+ *			@ref LEDc
+ *			@ref LEDd
  *
  * @return none.
  *
@@ -108,11 +108,11 @@ void myBSP_LED_Off(led_pin off_led)
  * @brief Commuta lo stato dei LED selezionati.
  *
  * @param toggle_led è la maschera di bit indicante i LED da commutare.
- *		Questo parametro può essere uno tra:
- *			@ref LED0
- *			@ref LED1
- *			@ref LED2
- *			@ref LED3
+ *		Questo parametro deve essere uno o più tra:
+ *			@ref LEDa
+ *			@ref LEDb
+ *			@ref LEDc
+ *			@ref LEDd
  *
  * @note
  *    Questa funzione deve essere chiamata dopo aver abilitato i LED.

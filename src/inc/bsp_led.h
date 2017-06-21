@@ -35,10 +35,10 @@
  */
  typedef enum
  {
-   LED0 = LED3_PIN,
-   LED1 = LED4_PIN,
-   LED2 = LED5_PIN,
-   LED3 = LED6_PIN
+   LEDa = LED3_PIN,
+   LEDb = LED4_PIN,
+   LEDc = LED5_PIN,
+   LEDd = LED6_PIN
  } led_pin;
 
 /**
