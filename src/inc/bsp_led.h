@@ -26,8 +26,8 @@
 #define BSP_LED_H_
 
 /***************************** Include Files *********************************/
-#include "config.h"
 #include "stm32f4xx.h"
+#include "config_bsp.h"
 
 /************************** Constant Definitions *****************************/
 /**
