@@ -47,10 +47,10 @@ void setup()
 {
 	HAL_Init();
 
-	myBSP_LED_Init(LED0);
-	myBSP_LED_Init(LED1);
-	myBSP_LED_Init(LED2);
-	myBSP_LED_Init(LED3);
+	myBSP_LED_Init(LEDa);
+	myBSP_LED_Init(LEDb);
+	myBSP_LED_Init(LEDc);
+	myBSP_LED_Init(LEDd);
 
 	myBSP_PB_Init(INT_ENABLED);
 }
@@ -62,19 +62,19 @@ void loop()
 {
 	switch(on_led % 4){
 		case 0:
-			myBSP_LED_Toggle(LED0);
+			myBSP_LED_Toggle(LEDa);
 			HAL_Delay(500);
 			break;
 		case 1:
-			myBSP_LED_Toggle(LED1);
+			myBSP_LED_Toggle(LEDb);
 			HAL_Delay(500);
 			break;
 		case 2:
-			myBSP_LED_Toggle(LED2);
+			myBSP_LED_Toggle(LEDc);
 			HAL_Delay(500);
 			break;
 		case 3:
-			myBSP_LED_Toggle(LED3);
+			myBSP_LED_Toggle(LEDd);
 			HAL_Delay(500);
 			break;
 	}
@@ -88,5 +88,5 @@ void loop()
 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	myBSP_LED_Toggle(LED0);
+	myBSP_LED_Toggle(LEDa);
 }
