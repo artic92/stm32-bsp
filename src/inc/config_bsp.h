@@ -1,5 +1,5 @@
-/**
-* @file config.h
+/*
+* @file config_bsp.h
 * @brief Definizioni dipendenti dalla board
 * @author: Antonio Riccio, Andrea Scognamiglio, Stefano Sorrentino
 * @copyright
@@ -30,4 +30,4 @@
 #define LED6_PIN                        GPIO_PIN_15
 
 
-#endif /* SRC_CONFIG_H_ */
+#endif /* SRC_CONFIG_BSP_H_ */

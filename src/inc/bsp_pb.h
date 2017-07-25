@@ -1,6 +1,7 @@
 /**
 * @file bsp_pb.h
 * @brief Definisce un board support package per la gestione dei pulsanti.
+* @example main.c
 * @author: Antonio Riccio, Andrea Scognamiglio, Stefano Sorrentino
 * @copyright
 * Copyright 2017 Antonio Riccio <antonio.riccio.27@gmail.com>, <antonio.riccio9@studenti.unina.it>
@@ -69,3 +70,4 @@ state_enum myBSP_PB_GetState();
 /** @} */
 
 #endif /* BSP_PB_H_ */
+/** @} */

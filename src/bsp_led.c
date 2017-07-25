@@ -121,3 +121,4 @@ void myBSP_LED_Toggle(led_pin toggle_led)
 {
 	HAL_GPIO_TogglePin(GPIOD, toggle_led);
 }
+/** @} */

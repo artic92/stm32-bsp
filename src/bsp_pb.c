@@ -79,3 +79,4 @@ state_enum myBSP_PB_GetState()
 	else
 		return NOT_PUSHED;
 }
+/** @} */

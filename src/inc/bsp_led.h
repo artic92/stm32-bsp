@@ -1,6 +1,7 @@
 /**
 * @file bsp_led.h
 * @brief Definisce un board support package per la gestione dei LED.
+* @example main.c
 * @author: Antonio Riccio, Andrea Scognamiglio, Stefano Sorrentino
 * @copyright
 * Copyright 2017 Antonio Riccio <antonio.riccio.27@gmail.com>, <antonio.riccio9@studenti.unina.it>
@@ -35,10 +36,10 @@
  */
  typedef enum
  {
-   LEDa = LED3_PIN,
-   LEDb = LED4_PIN,
-   LEDc = LED5_PIN,
-   LEDd = LED6_PIN
+   LEDa = LED3_PIN,   ///< Primo LED
+   LEDb = LED4_PIN,   ///< Secondo LED
+   LEDc = LED5_PIN,   ///< Terzo LED
+   LEDd = LED6_PIN    ///< Quarto LED
  } led_pin;
 
 /**
